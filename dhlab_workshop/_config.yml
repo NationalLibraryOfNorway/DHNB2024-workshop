@@ -47,7 +47,7 @@ parse:
 html:
   favicon                   : "images/favicon.svg"  # A path to a favicon image
 #  use_edit_page_button      : false  # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in
-#  use_repository_button     : false  # Whether to add a link to your repository button
+  use_repository_button     : true  # Whether to add a link to your repository button
 #  use_issues_button         : false  # Whether to add an "open an issue" button
   use_multitoc_numbering    : true   # Continuous numbering across parts/chapters
 #  extra_footer              : ""  # Will be displayed underneath the footer.
@@ -67,7 +67,7 @@ bibtex_bibfiles:
   - references.bib
 
 # Information about where the book exists on the web
-#repository:
-#  url: https://github.com/executablebooks/jupyter-book  # Online location of your book
-#  path_to_book: docs  # Optional path to your book, relative to the repository root
-#  branch: master  # Which branch of the repository should be used when creating links (optional)
+repository:
+  url: https://github.com/Ingerid/DHNB2024-workshop  # Online location of your book
+  path_to_book: dhlab_workshop  # Optional path to your book, relative to the repository root
+  branch: main  # Which branch of the repository should be used when creating links (optional)
