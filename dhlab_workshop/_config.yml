@@ -22,7 +22,6 @@ sphinx:
     bibtex_reference_style: author_year
   extra_extensions:
     - sphinx_design
-    - sphinx_subfigure
 
 # Parse and render settings
 parse:
