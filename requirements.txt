@@ -1,0 +1,9 @@
+jupyter-book
+ghp-import
+sphinx-design
+jupytext
+nbconvert
+myst_nb
+mystmd
+matplotlib
+numpy

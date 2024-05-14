@@ -1,0 +1,74 @@
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
+
+title: Navigating Digital Landscapes
+author: Lars G Johnsen, Jana Sverdljuk, Ingerid Løyning Dale, Lars Magne Tungland, Marie Iversdatter Røsok, Jon Carlstedt Tønnessen
+copyright: "2024"
+logo: images/NB_logo_navy.png
+# Patterns to skip when building the book. Can be glob-style (e.g. "*skip.ipynb")
+exclude_patterns            : ["_build/", Thumbs.db, .DS_Store, "**.ipynb_checkpoints", "skip*", "README.md", "reveal.js", "*env"]
+# Auto-exclude files not in the toc
+only_build_toc_files        : true
+
+# Force re-execution of notebooks on each build.
+# See https://jupyterbook.org/content/execute.html
+execute:
+  execute_notebooks: force
+
+
+sphinx:
+  config:
+    html_show_copyright: false
+    bibtex_reference_style: author_year
+  extra_extensions:
+    - sphinx_design
+    - sphinx_subfigure
+
+# Parse and render settings
+parse:
+  myst_enable_extensions:  # default extensions to enable in the myst parser. See https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html
+    - amsmath
+    - colon_fence
+    - deflist
+    - dollarmath
+    - html_admonition
+    - html_image
+    - linkify
+    # - replacements
+    # - smartquotes
+    - substitution
+    - tasklist
+  myst_render_markdown_format: "myst"
+  myst_url_schemes: [mailto, http, https] # URI schemes that will be recognised as external URLs in Markdown links
+  myst_dmath_double_inline: true  # Allow display math ($$) within an inline context
+
+
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+html:
+  favicon                   : "images/favicon.svg"  # A path to a favicon image
+#  use_edit_page_button      : false  # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in
+#  use_repository_button     : false  # Whether to add a link to your repository button
+#  use_issues_button         : false  # Whether to add an "open an issue" button
+  use_multitoc_numbering    : true   # Continuous numbering across parts/chapters
+#  extra_footer              : ""  # Will be displayed underneath the footer.
+ # google_analytics_id       : ""  # A GA id that can be used to track book views.
+#  home_page_in_navbar       : true  # Whether to include your home page in the left Navigation Bar
+#  baseurl                   : ""  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
+  announcement              : '<a href="https://dhnb.eu/conferences/dhnb2024/" target="_blank" style="color:White;"><b>DHNB 2024</b></a>  <a href="https://www.conftool.org/dhnb2024/index.php?page=browseSessions&form_session=103&presentations=show" target="_blank" style="color:White;">WS5-1 HALF-DAY WORKSHOP (LABS)</a> <p style="color:White;"><i>Time</i>:  Wednesday, 29th May 2024 8:30am - 12:00pm    |    <i>Location:</i> H-207 </p>' # A banner announcement at the top of the site.
+
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: book.tex
+
+# Add a bibtex file so that we can create citations
+bibtex_bibfiles:
+  - references.bib
+
+# Information about where the book exists on the web
+#repository:
+#  url: https://github.com/executablebooks/jupyter-book  # Online location of your book
+#  path_to_book: docs  # Optional path to your book, relative to the repository root
+#  branch: master  # Which branch of the repository should be used when creating links (optional)

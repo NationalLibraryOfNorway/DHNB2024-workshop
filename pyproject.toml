@@ -1,0 +1,26 @@
+[project]
+name = "DHNB2024"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "National Library of Norway", email = "dh-lab@nb.no"},
+]
+dependencies = [
+    "jupyter-book",
+    "ghp-import",
+    "sphinx-design",
+    "jupytext",
+    "nbconvert",
+    "myst-nb",
+    "matplotlib",
+    "numpy"
+]
+requires-python = "==3.11.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+[tool.jupytext]
+formats = "ipynb,py:percent,md:myst"
+notebook_metadata_filter="all,widgets,-varInspector"
+cell_metadata_filter="ExecuteTime,autoscroll,-hide_output"
+
