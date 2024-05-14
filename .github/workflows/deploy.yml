@@ -52,7 +52,7 @@ jobs:
           jupyter-book build dhlab_workshop
           jupytext dhlab_workshop/slideshow.md --to ipynb
           jupyter nbconvert dhlab_workshop/slideshow.ipynb --to html --template reveal
-          cp dhlab_workshop/slideshow.html _build/html/
+          cp dhlab_workshop/slideshow.html dhlab_workshop/_build/html/
           jupyter-book build dhlab_workshop
 
       # Upload the book's HTML as an artifact
