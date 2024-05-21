@@ -1,7 +1,7 @@
 ---
-title: presentation
 jupytext:
   formats: ipynb,md:myst
+  notebook_metadata_filter: all,widgets,-varInspector
   text_representation:
     extension: .md
     format_name: myst
@@ -12,6 +12,17 @@ kernelspec:
   language: python
   name: python3
 label: slides
+language_info:
+  codemirror_mode:
+    name: ipython
+    version: 3
+  file_extension: .py
+  mimetype: text/x-python
+  name: python
+  nbconvert_exporter: python
+  pygments_lexer: ipython3
+  version: 3.10.12
+title: presentation
 ---
 
 +++ {"slideshow": {"slide_type": "slide"}}
@@ -20,9 +31,17 @@ label: slides
 
 **Experiences from A Decade of Engaging with users of Digital Humanities**
 
----
-[Digital Humanities Lab](https://www.nb.no/dh-lab/) at
-[The National Library of Norway](https://www.nb.no/dh-lab/)
+Lars G. Johnsen, Jana Sverdljuk, Ingerid Løyning Dale, Lars Magne Tungland, Jon Carlstedt Tønnessen ([The National Library of Norway](https://www.nb.no/dh-lab/))
+
+_DHNB2024, Reykjavik, 29.05.2024_
+
+<!--
+Add this to the yaml notebook config:
+
+file_format: mystnb
+kernelspec:
+  name: python3
+-->
 
 +++ {"slideshow": {"slide_type": "slide"}, "note": "Session 1: 45 min"}
 
@@ -61,59 +80,57 @@ Reusable
 
 +++ {"slideshow": {"slide_type": "slide"}}
 
-### Legal deposit and copyright
+### Accessibility: Legal deposit and copyright laws
 
-* Copyright law protects the right to use, publish, and distribute works.
-* Documents published in Norway are deposited at the National Library, and made available for research and documentation purposes.
-* The DH-lab has developed a range of tools and applications for analysing the digital documents, without infringing on copyright laws.
+Copyright law
+: The originator of a publication has the right to use, publish, and distribute it. ([Åndsverkslova](https://lovdata.no/dokument/LTI/lov/2018-06-15-40))
 
-+++ {"slideshow": {"slide_type": "skip"}}
+Legal deposit law
+: Documents published in Norway are deposited at the National Library, for research and documentation purposes. ([Pliktavleveringslova](https://lovdata.no/dokument/NL/lov/1989-06-09-32))
 
-### Legal deposit vs. Copyright
-
-Legal deposit
-: All documents made publicly available in Norway must be deposited with the National Library of Norway, regardless of media type. ([Pliktavleveringslova](https://lovdata.no/dokument/NL/lov/1989-06-09-32))
-
-Copyright
-: The right to use, publish and distribute works is protected by copyright law. ([Åndsverkslova](https://lovdata.no/dokument/LTI/lov/2018-06-15-40))
+The DH-lab has developed a range of tools and applications for analysing the digital documents, without infringing on copyright laws.
 
 +++ {"slideshow": {"slide_type": "slide"}, "note": "ILD & LBJ \u2013 15 min"}
 
 ## Text digitization pipeline
 
-Book --> Scanned image --> OCR --> Fulltext --> Tokens --> Reduced representations  (e.g. frequency lists, ngrams, concordances, collocations) --> User interfaces (API, python, apps) + datasets (e.g. for training ML models, quantitative analyses)
+<!-- Book -> Scanned image -> OCR -> Fulltext -> Tokens -> Reduced representations  (e.g. frequency lists, ngrams, concordances, collocations) -> User interfaces (API, python, apps) + datasets (e.g. for training ML models, quantitative analyses) -->
 
-+++ {"slideshow": {"slide_type": "slide"}, "note": "ILD & LBJ \u2013 15 min"}
-
-## Digitalisation of published works
-
-The National Library of Norway has digitalized most of the available documents and materials in its collection of published works.
-
-Currently the digital library contains more than
-
-* 640 000 books
-* 4.5 million newspapers
-* 2.4 million photographies
-* 32 000 letters and handwritten scripts
-* as well as maps, radio broadcasts, magazines, music notes etc.
-
-+++ {"slideshow": {"slide_type": "slide"}, "note": "ILD"}
-
-## Physical books, magazines, newspapers, and other publications
-
-[![Books](https://bibliotekutvikling.no/content/uploads/sites/14/2020/03/DSC_66542-1024x684.jpg)](https://abmdig.no/senter-for-kulturarvdigitalisering/praktisk-gjennomforing/prioriteringer/)
-
-+++ {"slideshow": {"slide_type": "slide"}, "note": "ILD"}
-
-## Large scale, high resolution image scanning
-
-[![scanned image](https://bibliotekutvikling.no/content/uploads/sites/14/2021/12/DSC2686-1-1024x684.jpg)](https://abmdig.no/senter-for-kulturarvdigitalisering/hva-digitaliserer-vi-na/)
+![diagram](./images/digitisation_pipeline_diagram.png)
 
 +++ {"slideshow": {"slide_type": "slide"}, "note": "ILD"}
 
 ## Optical Character Recognition
 
-[![Screenshot of nb.no](images/nb_book_view_screenshot.png)](https://www.nb.no/items/URN:NBN:no-nb_digibok_2012041108172?searchText=Iceland&page=529)
+[![Screenshot of nb.no](./images/nb_book_view_screenshot.png)](https://www.nb.no/items/URN:NBN:no-nb_digibok_2012041108172?searchText=Iceland&page=529)
+
++++ {"slideshow": {"slide_type": "slide"}, "note": "ILD"}
+
+```{code-cell} ipython3
+# Tokenisation and indexing of digital text
+import nb_tokenizer as nbt
+
+text = """PART V
+ICELAND
+INTRODUCTION
+ICELAND ( Icelandic , Island ) is an island situated just south of the Arctic Circle , 600 miles west of Norway . It is the second largest island in Europe , the largest being Great Britain . It has an area of close on 40,000 square miles ( a third as large again as Scotland ) and a coast line of over 3,000 miles ."""
+
+for i, t in enumerate(nbt.tokenize(text)[:10]):
+    print(t)
+```
+
++++ {"slideshow": {"slide_type": "slide"}, "note": "ILD"}
+
+## Data aggregations
+
+For example, total word frequencies across all our digital texts:
+![totfreq](./images/freqplot.png)
+
++++ {"slideshow": {"slide_type": "slide"}, "note": "ILD"}
+
+Or word collocations:
+
+![wordcloud](./images/coll_wordcloud.png)
 
 +++ {"slideshow": {"slide_type": "slide"}, "note": "Session 2: 60 min, LMT", "subtitle": "Session 2"}
 
@@ -124,55 +141,30 @@ Currently the digital library contains more than
 * [R library](https://github.com/NationalLibraryOfNorway/dhlabR)
 * [Web apps](https://www.nb.no/dh-lab/apper/)
 
-+++ {"slideshow": {"slide_type": "skip"}}
-
-:::{dropdown} Summary
-This session explores the innovative approaches the National Library of Norway has adopted in creating user-friendly interfaces and applications for digital humanities projects.
-We'll showcase our DH-lab app development methodology, which incorporates the use of Flask APIs and the dhlab Python library, alongside the integration of Streamlit for interactive, web-friendly applications.
-With our indexed databases of digital texts, we have developed a suite of apps for analysing reduced representations of the data:
-
-* Corpus construction: Lists of document IDs and their metadata
-
-* N-gram statistics: Frequency counts of uni-, bi- and trigrams over time
-
-* Concordances: Immediate contexts of specific search terms
-
-* Collocations: Aggregated concordances, ranked by word similarity scores calculated with pointwise mutual information
-
-The session will be a hands-on experience, inviting participants to navigate through these interfaces. This practical exploration aims to provide an immersive understanding of the user-centric design principles we've implemented over the years.
-The apps are available from the National Library’s official website: <https://www.nb.no/dh-lab/apper/>
-:::
-
-<!-- summary end -->
-
 +++ {"slideshow": {"slide_type": "slide"}}
 
 ## User Interfaces
 
-![The stack of data serving tools and applications in the DH-lab](images/dhlab-stacken.png)
+[![The stack of data serving tools and applications in the DH-lab](./images/dhlab-stacken.png)](https://www.nb.no/dh-lab/)
 
 +++ {"slideshow": {"slide_type": "slide"}}
 
-## API
+## Application Programming Interface
 
-_Access to the DH-lab tools and methods_
-
-![Swagger API](../images/Screenshot_swagger.png)
+[![Swagger API](./images/Screenshot_swagger.png)](https://api.nb.no/dhlab/)
 
 +++ {"slideshow": {"slide_type": "slide"}}
 
 ## Python Library
 
+![python-logo](https://www.python.org/static/img/python-logo-large.png)
+
 <!-- LMT 15 min -->
+Install the [`dhlab`](https://pypi.org/project/dhlab/) python library from pypi, for use in e.g. Jupyter Notebooks such as our [DHlab tutorial](https://nationallibraryofnorway.github.io/digital_tekstanalyse/tutorial.html):
 
-Use the DH-lab Python library directly in Jupyter Notebooks:
-
-[DHlab tutorial](https://nationallibraryofnorway.github.io/digital_tekstanalyse/tutorial.html)
-
-+++ {"slideshow": {"slide_type": "slide"}}
-## R library
-
-TBC?
+```python3
+pip install -U dhlab
+```
 
 +++ {"slideshow": {"slide_type": "slide"}}
 
@@ -193,7 +185,7 @@ _Construct a collection of document IDs and their metadata with a search interfa
 
 [dh.nb.no/run/korpus/](https://dh.nb.no/run/korpus/)
 
-![Screenshot of the corpus builder app](images/Screenshot_corpus_app.png)
+[![Screenshot of the corpus builder app](./images/Screenshot_corpus_app.png)](https://dh.nb.no/run/korpus/)
 
 +++ {"slideshow": {"slide_type": "slide"}}
 
@@ -203,7 +195,7 @@ _Frequency counts of uni-, bi- and trigrams over time_:
 
 [nb.no/ngram/](https://www.nb.no/ngram/#1_1_1__1_1_3_1810%2C2022_2_2_2_12_2)
 
-![Screenshot of ngram app](images/Screenshot_ngram.png)
+[![Screenshot of ngram app](./images/Screenshot_ngram.png)](https://www.nb.no/ngram/#1_1_1__1_1_3_1810%2C2022_2_2_2_12_2)
 
 +++ {"slideshow": {"slide_type": "slide"}}
 
@@ -213,7 +205,7 @@ _Immediate, word level contexts of specific search terms_:
 
 [dh.nb.no/run/konkordans/](https://dh.nb.no/run/konkordans/)
 
-![Concordance app](images/Screenshot_concordance.png)
+[![Concordance app](./images/Screenshot_concordance.png)](https://dh.nb.no/run/konkordans/)
 
 +++ {"slideshow": {"slide_type": "slide"}}
 
@@ -223,20 +215,17 @@ _Aggregated concordances, ranked by word similarity scores calculated with point
 
 [dh.nb.no/run/kollokasjon/](https://dh.nb.no/run/kollokasjon/)
 
+![wordcloud](./images/coll_wordcloud.png)
+
 <!--- ![Collocations app](../images/Screenshot_collocation.png) --->
 
 +++ {"slideshow": {"slide_type": "slide"}}
 
 ## Break 10:00 - 10:30
 
-
-+++ {"slideshow": {"slide_type": "slide"}}
-
-Session 3:
++++ {"slideshow": {"slide_type": "slide"}, "note": "Session 3: 45 min, JS", "subtitle": "Session 3"}
 
 ## Combining Quantitative and Qualitative Methods
-
-<!-- 45 min  -->
 
 +++ {"slideshow": {"slide_type": "slide"}}
 
