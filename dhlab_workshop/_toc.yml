@@ -5,4 +5,5 @@ format: jb-book
 root: intro
 chapters:
 - file: abstract
-- file: presentation.md
+- file: resources
+
