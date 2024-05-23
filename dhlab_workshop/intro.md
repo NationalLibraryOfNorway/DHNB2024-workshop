@@ -35,7 +35,7 @@ This workshop will explore the evolution of the National Library of Norway's Dig
 
 The workshop will consist of three parts:
 
-1. :::{dropdown} [Ensuring Data Accessibility](#01-data-accessibility)
+1. :::{dropdown} [Infrastructure and accessibility](#01-data-accessibility)
     By providing preprocessed and easily accessible datasets, the Digital Humanities Laboratory streamlines the initial stages of research for academic communities. Researchers can focus on analysis and interpretation rather than spending significant time on data preprocessing.
     :::
 2. :::{dropdown} [Creating User-Friendly Interfaces and Applications](#02-user-friendly-interfaces)

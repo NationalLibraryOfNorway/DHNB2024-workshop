@@ -45,9 +45,7 @@ The workshop will consist of three parts:
 
 <!-- 01-data-accessibility-start -->
 (01-data-accessibility)=
-## Ensuring Data Accessibility
-
-(45 mins)
+## Infrastructure and accessibility
 
 We will showcase the current methods employed to make data available for users, highlighting text mining and big data analysis.
 The National Library of Norway has a large collection of digitized published works, which have gone through an extensive processing pipeline:
@@ -82,7 +80,6 @@ Example datasets: bibliographies
 (02-user-friendly-interfaces)=
 ## Creating User-Friendly Interfaces and Applications
 
-(60 mins)
 
 This session explores the innovative approaches the National Library of Norway has adopted in creating user-friendly interfaces and applications for digital humanities projects.
 We'll showcase our DH-lab app development methodology, which incorporates the use of Flask APIs and the dhlab Python library, alongside the integration of Streamlit for interactive, web-friendly applications.
@@ -105,7 +102,6 @@ The apps are available from the National Library’s official website: https://w
 (03-combining-methods)=
 ## Combining Quantitative and Qualitative Methods
 
-(45 mins)
 
 Showcasing collaborative projects that harmoniously integrate quantitative (text mining, collocation analysis, georeferencing, topic modelling) with qualitative methods (e.g. discourse analysis).
 
