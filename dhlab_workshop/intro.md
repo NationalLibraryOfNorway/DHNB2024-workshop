@@ -1,7 +1,9 @@
 ---
-subject: DHNB2024 WS5-1 HALF-DAY WORKSHOP (LABS)
+subject: WS5-1 HALF-DAY WORKSHOP (LABS)
 date: 2024-05-29
-venue: H-207
+venue:
+  title: DHNB 2024, Stakkahlíð, K-208
+  url: https://dhnb.eu/conferences/dhnb2024/workshops/
 authors:
   - name: Digital Humanities Lab
     email: dh-lab@nb.no
@@ -21,7 +23,7 @@ label: intro
 
 **Time**: 8:30am - 12:00pm
 
-**Location**: H-207
+**Location**: [Stakkahlíð, K-208](https://www.hi.is/stakkahlid)
 
 **Equipment**: A laptop or mobile phone with internet connection.
 

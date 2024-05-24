@@ -2,7 +2,8 @@
 # Learn more at https://jupyterbook.org/customize/config.html
 
 title: Navigating Digital Landscapes
-author: Lars G Johnsen, Jana Sverdljuk, Ingerid Løyning Dale, Lars Magne Tungland, Marie Iversdatter Røsok, Jon Carlstedt Tønnessen
+author: The Digital Humanities Lab, the National Library of Norway
+#author: Lars G Johnsen, Jana Sverdljuk, Ingerid Løyning Dale, Lars Magne Tungland, Jon Carlstedt Tønnessen
 copyright: "2024"
 logo: images/NB_logo_navy.png
 # Patterns to skip when building the book. Can be glob-style (e.g. "*skip.ipynb")

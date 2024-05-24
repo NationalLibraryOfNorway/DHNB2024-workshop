@@ -2,7 +2,6 @@
 subject: DHNB2024 WS5-1 HALF-DAY WORKSHOP (LABS)
 description: Abstract
 date: 2024-05-29
-venue: H-207
 authors:
   - name: Digital Humanities Lab
     email: dh-lab@nb.no
