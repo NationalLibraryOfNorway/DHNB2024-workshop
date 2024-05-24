@@ -55,7 +55,7 @@ html:
  # google_analytics_id       : ""  # A GA id that can be used to track book views.
 #  home_page_in_navbar       : true  # Whether to include your home page in the left Navigation Bar
 #  baseurl                   : ""  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
-  announcement              : '<a href="https://dhnb.eu/conferences/dhnb2024/" target="_blank" style="color:White;"><b>DHNB 2024</b></a>  <a href="https://www.conftool.org/dhnb2024/index.php?page=browseSessions&form_session=103&presentations=show" target="_blank" style="color:White;">WS5-1 HALF-DAY WORKSHOP (LABS)</a> <p style="color:White;"><i>Time</i>:  Wednesday, 29th May 2024 8:30am - 12:00pm    |    <i>Location:</i> H-207 </p>' # A banner announcement at the top of the site.
+  announcement              : '<a href="https://dhnb.eu/conferences/dhnb2024/" target="_blank" style="color:White;"><b>DHNB 2024</b></a>  <a href="https://www.conftool.org/dhnb2024/index.php?page=browseSessions&form_session=103&presentations=show" target="_blank" style="color:White;">WS5-1 HALF-DAY WORKSHOP (LABS)</a> <p style="color:White;"><i>Time</i>:  Wednesday, 29th May 2024 8:30am - 12:00pm    |    <i>Location:</i> < a href="https://www.hi.is/stakkahlid" target="_blank" style="color:White;">Stakkahlíð, K-208</a></p>' # A banner announcement at the top of the site.
 
 
 # Define the name of the latex output file for PDF builds
