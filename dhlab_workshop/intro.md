@@ -25,7 +25,7 @@ label: intro
 
 **Location**: [Stakkahlíð, K-208](https://www.hi.is/stakkahlid)
 
-**Equipment**: A laptop or mobile phone with internet connection.
+**Equipment**: A laptop with internet connection.
 
 [Workshop description on DHNB2024's programme](https://www.conftool.org/dhnb2024/index.php?page=browseSessions&form_session=103&presentations=show)
 
