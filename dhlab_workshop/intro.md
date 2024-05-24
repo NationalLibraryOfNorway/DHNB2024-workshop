@@ -46,12 +46,13 @@ The workshop will consist of three parts:
 3. :::{dropdown} [Interpreting Results and Engaging with Users](#03-combining-methods)
     The applications are supplemented with descriptions of the methods used to support better understanding of results and initiate reflections on combination of quantitative and qualitative methods. Sufficient explanation of the analysis outcomes encourages engagement of digital humanists in meaningful conversations with scholars from traditional humanities disciplines, fostering a mutually beneficial relationship.
     :::
+::::{grid} 2
 
 :::{card} Who is it for?
 Academics, researchers, librarians, and professionals interested in incorporating digital humanities methods into their research. Both technical and non-technical participants are welcome.
 :::
 
-::::{card} Presenters
+:::{card} Presenters
 
 [The Digital Humanities Lab](https://www.nb.no/dh-lab/) at the [National Library of Norway](https://www.nb.no/):
 
@@ -60,5 +61,5 @@ Academics, researchers, librarians, and professionals interested in incorporatin
 * Ingerid Løyning Dale
 * Lars Magne Tungland
 * Jon Carlstedt Tønnessen
-
+:::
 ::::
