@@ -41,7 +41,7 @@ The workshop will consist of three parts:
     By providing preprocessed and easily accessible datasets, the Digital Humanities Laboratory streamlines the initial stages of research for academic communities. Researchers can focus on analysis and interpretation rather than spending significant time on data preprocessing.
     :::
 2. :::{dropdown} [Creating User-Friendly Interfaces and Applications](#02-user-friendly-interfaces)
-    Creating applications with user-friendly interfaces democratize access to digital humanities tools. Academics without extensive technical expertise can actively engage in digital research, broadening participation across disciplines.
+    Creating applications with user-friendly interfaces democratizes access to digital humanities tools. Academics without extensive technical expertise can actively engage in digital research, broadening participation across disciplines.
     :::
 3. :::{dropdown} [Interpreting Results and Engaging with Users](#03-combining-methods)
     The applications are supplemented with descriptions of the methods used to support better understanding of results and initiate reflections on combination of quantitative and qualitative methods. Sufficient explanation of the analysis outcomes encourages engagement of digital humanists in meaningful conversations with scholars from traditional humanities disciplines, fostering a mutually beneficial relationship.
