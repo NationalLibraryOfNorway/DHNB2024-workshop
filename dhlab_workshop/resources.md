@@ -31,10 +31,15 @@ User-friendly applications for text analysis and visualization.
 [dh.nb.no/apps/](https://www.nb.no/dh-lab/apper/)
 :::
 
-:::{card} [Jupyter notebooks]
+:::{card} [Jupyter notebooks](https://nationallibraryofnorway.github.io/digital_tekstanalyse/tutorial.html)
 
-[Jupyter Notebooks](https://nationallibraryofnorway.github.io/digital_tekstanalyse/)
+Tutorials and examples for text analysis with `dhlab` and `pandas` (Python) in Jupyter Notebooks.
+
+```{note}
+The notebooks are currently only in Norwegian.
+```
 :::
+
 ::::
 
 ::::{grid} 2
