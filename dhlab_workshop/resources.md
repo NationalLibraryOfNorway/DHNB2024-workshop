@@ -6,7 +6,6 @@
 
 :::{card} [DHLAB homepage](https://www.nb.no/dh-lab/)
 The Digital Humanities Laboratory at the National Library of Norway:
-
 [dh.nb.no](https://www.nb.no/dh-lab/)
 :::
 
@@ -15,22 +14,30 @@ The Digital Humanities Laboratory at the National Library of Norway:
 List of publications using the DHLAB tools.
 :::
 
-:::{card} Demos
-- [`dhlab` python demo](https://nationallibraryofnorway.github.io/digital_tekstanalyse/dhlab_class_demo.html)
-- [Jupyter Notebooks](https://nationallibraryofnorway.github.io/digital_tekstanalyse/)
+:::{card} [Demo](https://nationallibraryofnorway.github.io/digital_tekstanalyse/dhlab_class_demo.html)
+
+Code snippets showcasing [`dhlab`](https://pypi.org/project/dhlab/) python classes
 :::
 
 ::::
 
 ## DHLAB user interfaces
 
-::::{grid} 4
+::::{grid} 2
 
-:::{card} Webapps
+:::{card} [Webapps](https://www.nb.no/dh-lab/apper/)
 User-friendly applications for text analysis and visualization.
 
 [dh.nb.no/apps/](https://www.nb.no/dh-lab/apper/)
 :::
+
+:::{card} [Jupyter notebooks]
+
+[Jupyter Notebooks](https://nationallibraryofnorway.github.io/digital_tekstanalyse/)
+:::
+::::
+
+::::{grid} 2
 
 :::{card} Python library [`dhlab`](https://pypi.org/project/dhlab/)
 
@@ -50,11 +57,11 @@ Github repository for the R library.
 devtools::install_github("NationalLibraryOfNorway/dhlabR")
 ```
 :::
+::::
+
 
 :::{card} Swagger API
 REST-API endpoint for extracting metadata, text snippets and aggregated data from the National Library of Norway's digital collections.
 
 [api.nb.no/dhlab/](https://api.nb.no/dhlab/)
 :::
-
-::::
